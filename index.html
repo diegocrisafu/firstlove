@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Jade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Caveat:wght@600;700&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="screen lock-screen" id="lock-screen" aria-hidden="false">
+    <div class="lock">
+      <div class="panel hero">
+        <div class="badge">Dental wing</div>
+        <h1>Access required</h1>
+        <p class="lede">This bay is sealed. Enter the attending code to open the diary.</p>
+        <div class="input-stack">
+          <input id="password" type="password" autocomplete="off" placeholder="Enter access code" aria-label="Enter access code" />
+          <button id="enter-btn">Enter</button>
+        </div>
+        <div class="hint">Hint: attending &mdash; dr.jade</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen letter-screen hidden" id="letter-screen" aria-hidden="true">
+    <div class="letter-card diary" id="diary-card">
+      <div class="top-chip">message</div>
+      <div class="letter" id="letter"></div>
+      <button class="page-button" id="next-page" type="button" aria-label="Next page">Next page ↓</button>
+    </div>
+  </section>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
